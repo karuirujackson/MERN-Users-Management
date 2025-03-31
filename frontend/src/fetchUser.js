@@ -9,7 +9,7 @@ export default function FetchUsers () {
         const fetchData = async () => {
             setIsLoading(true);
             try {
-                const response = await fetch("http://localhost:5000/api/users") // Call backend API
+                const response = await fetch("http://localhost:3000/api/users") // Call backend API
                 if(!response.ok) {
                     throw new Error('Failed to fetch users');
                 }
